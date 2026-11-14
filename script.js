@@ -1,0 +1,333 @@
+const printButton = document.querySelector(".print-button");
+const poster = document.querySelector("#poster");
+const overview = document.querySelector("#poster-overview");
+const presentation = document.querySelector("#presentation");
+const modeButtons = [...document.querySelectorAll(".mode-button")];
+const slides = [...document.querySelectorAll(".presentation-slide")];
+const presenterBadge = document.querySelector("#presenter-badge");
+const viewCounter = document.querySelector("#view-counter");
+const viewCounterLabel = viewCounter.nextElementSibling;
+const navigation = document.querySelector("#view-navigation");
+const previousButton = document.querySelector("#previous-view");
+const nextButton = document.querySelector("#next-view");
+const notesToggle = document.querySelector("#notes-toggle");
+const notesPanel = document.querySelector("#speaker-notes");
+const notesEditor = document.querySelector("#notes-editor");
+const notesViewNumber = document.querySelector("#notes-view-number");
+const notesStatus = document.querySelector("#notes-status");
+const fullscreenButton = document.querySelector("#fullscreen-button");
+const exportSlidesButton = document.querySelector("#export-slides-pdf");
+const noteTemplates = [...document.querySelectorAll("[data-speaker-notes]")];
+const storageKey = "pdd-speaker-notes-v1";
+
+let currentView = 1;
+const speakerNotes = Object.fromEntries(
+  noteTemplates.map((template) => [
+    template.dataset.speakerNotes,
+    template.content.textContent.trim(),
+  ]),
+);
+
+let savedNotes;
+try {
+  savedNotes = localStorage.getItem(storageKey);
+} catch {
+  notesStatus.textContent = "Browser storage is unavailable; notes will not persist after this session.";
+}
+
+if (savedNotes) {
+  try {
+    const parsedNotes = JSON.parse(savedNotes);
+    if (parsedNotes && typeof parsedNotes === "object" && !Array.isArray(parsedNotes)) {
+      for (const [view, text] of Object.entries(parsedNotes)) {
+        if (Object.hasOwn(speakerNotes, view) && typeof text === "string") {
+          speakerNotes[view] = text;
+        }
+      }
+    } else {
+      notesStatus.textContent = "Saved notes could not be read; the presentation script is loaded.";
+    }
+  } catch {
+    notesStatus.textContent = "Saved notes could not be read; the presentation script is loaded.";
+  }
+}
+
+function saveSpeakerNotes() {
+  speakerNotes[String(currentView)] = notesEditor.value;
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(speakerNotes));
+    notesStatus.textContent = "Notes saved in this browser.";
+  } catch {
+    notesStatus.textContent = "Notes could not be saved in this browser; edits remain until the page closes.";
+  }
+}
+
+function updateRevealControls(slide) {
+  const controls = slide.querySelector("[data-reveal-controls]");
+  if (!controls) {
+    return;
+  }
+
+  const currentStep = Number(controls.dataset.currentStep || 0);
+  const totalSteps = Number(controls.dataset.revealTotal);
+  controls.querySelector("[data-reveal-progress]").textContent =
+    `Step ${currentStep} of ${totalSteps}`;
+  controls.querySelector("[data-reveal-next]").disabled = currentStep >= totalSteps;
+}
+
+function resetReveal(slide) {
+  const revealItems = slide.querySelectorAll("[data-reveal-step]");
+  if (revealItems.length === 0) {
+    return;
+  }
+
+  revealItems.forEach((item) => {
+    item.hidden = true;
+    item.classList.remove("reveal-entering", "is-visible");
+  });
+
+  const controls = slide.querySelector("[data-reveal-controls]");
+  controls.dataset.currentStep = "0";
+  updateRevealControls(slide);
+}
+
+function revealThroughStep(slide, step) {
+  const controls = slide.querySelector("[data-reveal-controls]");
+  const totalSteps = Number(controls.dataset.revealTotal);
+  const currentStep = Math.min(step, totalSteps);
+
+  slide.querySelectorAll("[data-reveal-step]").forEach((item) => {
+    if (Number(item.dataset.revealStep) > currentStep || !item.hidden) {
+      return;
+    }
+
+    item.hidden = false;
+    item.classList.add("reveal-entering");
+    requestAnimationFrame(() => {
+      if (!item.hidden) {
+        item.classList.add("is-visible");
+      }
+    });
+  });
+
+  controls.dataset.currentStep = String(currentStep);
+  updateRevealControls(slide);
+}
+
+function revealAll(slide) {
+  const controls = slide.querySelector("[data-reveal-controls]");
+  if (controls) {
+    revealThroughStep(slide, Number(controls.dataset.revealTotal));
+  }
+}
+
+function captureRevealStates() {
+  return slides.map((slide) => ({
+    slide,
+    currentStep: slide.querySelector("[data-reveal-controls]")?.dataset.currentStep,
+    items: [...slide.querySelectorAll("[data-reveal-step]")].map((item) => ({
+      item,
+      hidden: item.hidden,
+      className: item.className,
+    })),
+  }));
+}
+
+function restoreRevealStates(states) {
+  states.forEach(({ slide, currentStep, items }) => {
+    items.forEach(({ item, hidden, className }) => {
+      item.hidden = hidden;
+      item.className = className;
+    });
+
+    const controls = slide.querySelector("[data-reveal-controls]");
+    if (controls && currentStep !== undefined) {
+      controls.dataset.currentStep = currentStep;
+      updateRevealControls(slide);
+    }
+  });
+}
+
+function exportSlidesPdf() {
+  const revealStates = captureRevealStates();
+  slides.forEach(revealAll);
+  document.body.classList.add("is-exporting-slides");
+
+  const finishExport = () => {
+    document.body.classList.remove("is-exporting-slides");
+    restoreRevealStates(revealStates);
+  };
+  window.addEventListener("afterprint", finishExport, { once: true });
+
+  requestAnimationFrame(() => window.print());
+}
+
+function showView(view) {
+  currentView = Math.min(Math.max(view, 1), slides.length);
+  const activeSlide = slides[currentView - 1];
+
+  slides.forEach((slide, index) => {
+    const isActive = index === currentView - 1;
+    slide.hidden = !isActive;
+    slide.classList.toggle("is-active", isActive);
+  });
+  resetReveal(activeSlide);
+
+  viewCounter.textContent = String(currentView).padStart(2, "0");
+  presenterBadge.textContent = activeSlide.dataset.presenter;
+  presenterBadge.hidden = currentView <= 8 || currentView === 9 || currentView === 10 || currentView === 11;
+  viewCounterLabel.textContent =
+    currentView <= 3
+      ? `/ ${activeSlide.dataset.presenter}`
+      : currentView === 4
+        ? "/ PRESENTER 2 · Dulanjali"
+        : currentView === 5
+          ? "/ PRESENTER 2 · Dulanjali"
+          : currentView === 6
+            ? "/ PRESENTER 2 · Dulanjali"
+            : currentView === 7
+              ? "/ PRESENTER 3 · Hairong"
+              : currentView === 8
+                ? "/ PRESENTER 3 · Hairong"
+                : currentView === 9
+                  ? "/ PRESENTER 3 · Hairong"
+                  : currentView === 10
+                    ? "/ PRESENTER 1 · Teo Li Tien"
+                    : "/ PRESENTER 1 · Teo Li Tien";
+  notesViewNumber.textContent = String(currentView);
+  notesEditor.value = speakerNotes[String(currentView)];
+  previousButton.disabled = currentView === 1;
+  nextButton.disabled = currentView === slides.length;
+
+  [...navigation.querySelectorAll("button")].forEach((button, index) => {
+    if (index === currentView - 1) {
+      button.setAttribute("aria-current", "step");
+    } else {
+      button.removeAttribute("aria-current");
+    }
+  });
+}
+
+function setMode(mode) {
+  const isPresentation = mode === "presentation";
+  overview.hidden = isPresentation;
+  presentation.hidden = !isPresentation;
+  poster.classList.toggle("is-presenting", isPresentation);
+  if (isPresentation) {
+    resetReveal(slides[currentView - 1]);
+  } else {
+    slides.filter((slide) => slide.querySelector("[data-reveal-controls]")).forEach(revealAll);
+  }
+
+  modeButtons.forEach((button) => {
+    const isSelected = button.dataset.mode === mode;
+    button.classList.toggle("is-selected", isSelected);
+    button.setAttribute("aria-pressed", String(isSelected));
+  });
+
+  if (isPresentation) {
+    notesPanel.hidden = true;
+    notesToggle.setAttribute("aria-expanded", "false");
+    notesToggle.querySelector("span").textContent = "＋";
+  }
+}
+
+slides.forEach((slide, index) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.textContent = String(index + 1).padStart(2, "0");
+  button.setAttribute("aria-label", `Go to view ${index + 1}`);
+  button.addEventListener("click", () => showView(index + 1));
+  navigation.append(button);
+});
+
+document.querySelectorAll("[data-reveal-controls]").forEach((controls) => {
+  controls.addEventListener("click", (event) => {
+    const button = event.target.closest("button");
+    if (!button) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    const slide = controls.closest(".presentation-slide");
+    const currentStep = Number(controls.dataset.currentStep || 0);
+    if (button.hasAttribute("data-reveal-next")) {
+      revealThroughStep(slide, currentStep + 1);
+    } else if (button.hasAttribute("data-reveal-all")) {
+      revealAll(slide);
+    } else if (button.hasAttribute("data-reveal-reset")) {
+      resetReveal(slide);
+    }
+  });
+});
+
+showView(currentView);
+
+printButton?.addEventListener("click", () => {
+  window.print();
+});
+
+modeButtons.forEach((button) => {
+  button.addEventListener("click", () => setMode(button.dataset.mode));
+});
+
+const referencesPopover = document.querySelector("#references-popover");
+document.querySelectorAll("a.citation[href^='#ref-']").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const reference = document.querySelector(link.hash);
+    if (!reference || typeof referencesPopover.showPopover !== "function") {
+      return;
+    }
+
+    event.preventDefault();
+    if (!referencesPopover.matches(":popover-open")) {
+      referencesPopover.showPopover();
+    }
+    requestAnimationFrame(() => reference.scrollIntoView({ block: "nearest" }));
+  });
+});
+
+previousButton.addEventListener("click", () => showView(currentView - 1));
+nextButton.addEventListener("click", () => showView(currentView + 1));
+
+notesToggle.addEventListener("click", () => {
+  const isExpanded = notesToggle.getAttribute("aria-expanded") === "true";
+  notesPanel.hidden = isExpanded;
+  notesToggle.setAttribute("aria-expanded", String(!isExpanded));
+  notesToggle.querySelector("span").textContent = isExpanded ? "＋" : "−";
+});
+
+notesEditor.addEventListener("input", saveSpeakerNotes);
+
+document.addEventListener("keydown", (event) => {
+  if (presentation.hidden || event.target === notesEditor) {
+    return;
+  }
+
+  if (event.key === "ArrowLeft") {
+    showView(currentView - 1);
+  } else if (event.key === "ArrowRight") {
+    showView(currentView + 1);
+  }
+});
+
+fullscreenButton.addEventListener("click", async () => {
+  try {
+    if (document.fullscreenElement === presentation) {
+      await document.exitFullscreen();
+    } else {
+      await presentation.requestFullscreen();
+    }
+  } catch {
+    notesStatus.textContent = "Full-screen mode is unavailable in this browser.";
+  }
+});
+
+exportSlidesButton.addEventListener("click", exportSlidesPdf);
+
+document.addEventListener("fullscreenchange", () => {
+  fullscreenButton.textContent =
+    document.fullscreenElement === presentation ? "Exit full screen" : "Full screen";
+});

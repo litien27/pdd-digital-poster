@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An academic poster examining sustainability, smart-city infrastructure, governance and justice in Punggol Digital District."
+    />
+    <meta name="theme-color" content="#003d7c" />
+    <title>Punggol Digital District | CCS5209 Poster</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="poster" id="poster">
+      <header class="poster-header">
+        <div class="university-mark">
+          <img class="overview-nus-logo" src="assets/NUS-logo-trimmed.jpg" alt="National University of Singapore (NUS)" />
+        </div>
+        <div class="title-block">
+          <p class="eyebrow"><span></span> CCS5209 · URBAN SUSTAINABILITY FUTURES</p>
+          <h1>Punggol <em>Digital District</em></h1>
+          <p class="subtitle">Place, technology and the question of a shared urban future</p>
+        </div>
+        <div class="header-meta">
+          <span>FIELD STUDY</span>
+          <strong>SINGAPORE</strong>
+          <button class="print-button" type="button">Print poster <span aria-hidden="true">↗</span></button>
+        </div>
+      </header>
+
+      <nav class="mode-toolbar" aria-label="Poster and presentation modes">
+        <div class="mode-buttons">
+          <button class="mode-button is-selected" type="button" data-mode="overview" aria-pressed="true">
+            Poster overview
+          </button>
+          <button class="mode-button" type="button" data-mode="presentation" aria-pressed="false">
+            Present 11 views <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <span class="mode-hint">Use ← → to navigate · NUS CCS5209</span>
+      </nav>
+
+      <div class="poster-overview" id="poster-overview">
+      <section class="research-question" aria-labelledby="question-title">
+        <div class="question-label">
+          <span class="section-number">01</span>
+          <h2 id="question-title">Research question</h2>
+        </div>
+        <p>
+          How does Punggol Digital District’s vision of a sustainable, digitally enabled
+          urban environment reshape the relationship between
+          <strong>people, place and power?</strong>
+        </p>
+        <div class="question-tags" aria-label="Analytical themes">
+          <span>PEOPLE</span><i>×</i><span>PLANET</span><i>×</i><span>PLATFORM</span>
+        </div>
+      </section>
+
+      <section class="analysis" aria-label="Three analytical lenses">
+        <article class="lens-card ecology-card" id="ecology">
+          <header class="lens-heading">
+            <span class="section-number">02</span>
+            <div>
+              <span class="lens-kicker">LANDSCAPE + RESOURCES</span>
+              <h2>Ecological<br />sustainability</h2>
+            </div>
+            <span class="lens-symbol" aria-hidden="true">↗</span>
+          </header>
+          <p class="lens-lead">
+            A “green” district is measured by more than landscape. It depends on
+            how urban systems reduce resource use while supporting ecological function.
+          </p>
+          <div class="lens-detail">
+            <h3>Infrastructure versus ecological outcomes</h3>
+            <p>
+              PDD integrates district cooling, renewable energy, smart-grid infrastructure and green spaces to improve environmental performance. However, efficiency targets and green design do not independently establish net ecological benefits, particularly regarding emissions, biodiversity and lifecycle impacts.<a class="citation" href="#ref-1">[1]</a>
+            </p>
+          </div>
+          <figure class="field-photo">
+            <div class="photo-placeholder photo-green photo-has-image">
+              <img src="assets/01Ecological.png" alt="Punggol Digital District buildings with ecological systems and tower labels" />
+            </div>
+            <figcaption><strong>Ecological Sustainability</strong><small>[IMAGE CREDIT TO VERIFY]</small></figcaption>
+          </figure>
+          <div class="critical-note">
+            <span>!</span>
+            <p><strong>Critical tension</strong> Performance claims need transparent baselines, measurable outcomes and long-term maintenance.</p>
+          </div>
+          <footer class="key-question"><strong>ASK</strong><span>What ecological benefits can be observed—and who experiences them?</span></footer>
+        </article>
+
+        <article class="lens-card smart-card" id="smart-city">
+          <header class="lens-heading">
+            <span class="section-number">03</span>
+            <div>
+              <span class="lens-kicker">DATA + EVERYDAY LIFE</span>
+              <h2>Smart City 2.0</h2>
+            </div>
+            <span class="lens-symbol" aria-hidden="true">⌁</span>
+          </header>
+          <p class="lens-lead">
+            Smart-city thinking moves beyond connected infrastructure to ask how
+            digital systems shape public services and daily experience.
+          </p>
+          <div class="lens-detail">
+            <h3>Technological efficiency versus human-centred outcomes</h3>
+            <p>
+              PDD's Open Digital Platform integrates district operations through real-time data and digital-twin capabilities. While these technologies support operational efficiency, their wider contribution to worker well-being, inclusive opportunities and meaningful user participation requires further evidence.<a class="citation" href="#ref-2">[2]</a>
+            </p>
+          </div>
+          <figure class="field-photo">
+            <div class="photo-placeholder photo-digital photo-has-image">
+              <img src="assets/02Smart.png" alt="Digital map interface showing Singapore districts and weather layers" />
+            </div>
+            <figcaption><strong>Smart City 2.0</strong><small>[IMAGE CREDIT TO VERIFY]</small></figcaption>
+          </figure>
+          <div class="critical-note">
+            <span>!</span>
+            <p><strong>Critical tension</strong> Efficiency may come with risks around privacy, surveillance, access and digital dependence.</p>
+          </div>
+          <footer class="key-question"><strong>ASK</strong><span>Does district technology make urban life better for everyone?</span></footer>
+        </article>
+
+        <article class="lens-card governance-card" id="governance">
+          <header class="lens-heading">
+            <span class="section-number">04</span>
+            <div>
+              <span class="lens-kicker">POWER + PARTICIPATION</span>
+              <h2>Governance<br />and justice</h2>
+            </div>
+            <span class="lens-symbol" aria-hidden="true">◎</span>
+          </header>
+          <p class="lens-lead">
+            Planning and management distribute benefits, responsibilities and
+            decision-making power across different stakeholders.
+          </p>
+          <div class="lens-detail">
+            <h3>Institutional coordination versus public accountability</h3>
+            <p>
+              PDD's state-led development enables coordinated planning and digital management, but raises questions about who shapes priorities, controls data access and influences decisions. Its broader contribution to environmental justice depends on accessible benefits, recognition of diverse needs and meaningful participation.<a class="citation" href="#ref-3">[3]</a>
+            </p>
+          </div>
+          <figure class="field-photo">
+            <div class="photo-placeholder photo-community photo-has-image">
+              <img src="assets/03Governance.png" alt="Urban streetscape with pedestrians, greenery and connected buildings" />
+            </div>
+            <figcaption><strong>Governance and Justice</strong><small>[IMAGE CREDIT TO VERIFY]</small></figcaption>
+          </figure>
+          <div class="critical-note">
+            <span>!</span>
+            <p><strong>Critical tension</strong> Institutional and commercial priorities may differ from nearby communities’ needs.</p>
+          </div>
+          <footer class="key-question"><strong>ASK</strong><span>Who shapes the district—and who might be left out?</span></footer>
+        </article>
+      </section>
+
+      <section class="field-trip-gallery" aria-labelledby="field-trip-gallery-title">
+        <header class="gallery-heading">
+          <div>
+            <span class="lens-kicker">VIEW 3 · SIT FIELD VISIT</span>
+            <h2 id="field-trip-gallery-title">Field-trip gallery</h2>
+          </div>
+          <p>Three photographs from the group field visit.</p>
+        </header>
+        <div class="gallery-grid">
+          <figure class="field-trip-card">
+            <div class="field-trip-image-slot model-slot">
+              <img src="assets/PDD-visit.png" alt="PDD development model" />
+            </div>
+            <figcaption class="field-trip-caption">
+              <strong>PDD development model</strong>
+              <p>Integrated district planning</p>
+              <small>Source: Group field visit, 2026.</small>
+            </figcaption>
+          </figure>
+          <figure class="field-trip-card">
+            <div class="field-trip-image-slot solar-slot">
+              <img src="assets/Solar.png" alt="Environmental infrastructure" />
+            </div>
+            <figcaption class="field-trip-caption">
+              <strong>Environmental infrastructure</strong>
+              <p>Solar PV / passive cooling</p>
+              <small>Source: Group field visit, 2026.</small>
+            </figcaption>
+          </figure>
+          <figure class="field-trip-card">
+            <div class="field-trip-image-slot mobility-slot">
+              <img src="assets/Bicycle.png" alt="Pedestrian and bicycle facilities" />
+            </div>
+            <figcaption class="field-trip-caption">
+              <strong>Active mobility</strong>
+              <p></b>Pedestrian spaces / bicycle parking</p>
+              <small>Source: Group field visit, 2026.</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="synthesis" id="evaluation" aria-labelledby="synthesis-title">
+        <div class="synthesis-title">
+          <span class="section-number">05</span>
+          <div>
+            <span class="lens-kicker">INTEGRATED EVALUATION</span>
+            <h2 id="synthesis-title">From smart district<br />to shared city</h2>
+          </div>
+        </div>
+        <div class="synthesis-copy">
+          <p class="synthesis-lead">
+            The district’s ambition is most compelling when environmental systems,
+            digital infrastructure and governance reinforce one another.
+          </p>
+          <p>
+            The promise cannot be judged by plans alone. It depends on verifiable
+            outcomes, inclusive access and meaningful ways for people to shape how
+            the district evolves. Test these criteria against field observations and
+            cited evidence.
+          </p>
+        </div>
+        <aside class="recommendations">
+          <h3>Recommendations</h3>
+          <ol>
+            <li><span>01</span><p><strong>Make outcomes verifiable.</strong> Publish district environmental indicators against clear baselines.</p></li>
+            <li><span>02</span><p><strong>Assess technological sustainability.</strong> Evaluate digital footprints against efficiency gains.</p></li>
+            <li><span>03</span><p><strong>Design for inclusive access.</strong> Explain data use, safeguard privacy and retain non-digital service options.</p></li>
+            <li><span>04</span><p><strong>Keep participation active.</strong> Let residents, workers and visitors shape public spaces and services over time.</p></li>
+          </ol>
+        </aside>
+      </section>
+
+      <footer class="poster-footer">
+        <button class="references-toggle" type="button" data-open-references popovertarget="references-popover" popovertargetaction="show">
+          References &amp; Acknowledgements
+        </button>
+        <p class="credits"><span>Teo Li Tien</span><span>Dulanjali Thoradeniya</span><span>Su Hairong</span></p>
+      </footer>
+      </div>
+
+      <section class="presentation-mode" id="presentation" aria-label="11-view group presentation" hidden>
+        <div class="presentation-topline">
+          <div class="view-counter"><strong id="view-counter">01</strong><span>/ 11 VIEWS</span></div>
+          <div class="presenter-badge" id="presenter-badge">PRESENTER 1 · Teo Li Tien</div>
+          <button class="notes-toggle" id="notes-toggle" type="button" aria-expanded="false" aria-controls="speaker-notes">
+            Speaker notes <span aria-hidden="true">＋</span>
+          </button>
+          <button class="fullscreen-button export-slides-button" id="export-slides-pdf" type="button">Export slides PDF</button>
+        </div>
+
+        <div class="slide-frame" id="slide-frame" aria-live="polite">
+          <article class="presentation-slide cover-slide is-active" data-view="1" data-presenter="PRESENTER 1 · Teo Li Tien">
+            <div class="slide-overline">
+              <span class="cover-brand">
+                <span class="cover-course-title">CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              </span>
+              <span>01 / OPENING</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="cover-content">
+              <p class="slide-kicker cover-case-label">PUNGGOL DIGITAL DISTRICT (PDD)</p>
+              <h1>Smart and Ecological Ambitions.<br /><em>Beyond Technological Integration?</em></h1>
+              <p class="slide-subtitle">A critical evaluation through the social-ecological-technological systems (SETS) framework.</p>
+              <div class="question-callout">
+                <span>CENTRAL ANALYTICAL QUESTION</span>
+                <p>To what extent does PDD translate its smart and ecological ambitions into meaningful environmental, social and governance outcomes?</p>
+              </div>
+              <p class="cover-topic-line">ECOLOGICAL SUSTAINABILITY · SMART CITY 2.0 · GOVERNANCE &amp; JUSTICE</p>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="2" data-presenter="PRESENTER 1 · Teo Li Tien" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>02 / CASE CONTEXT</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="case-view-content">
+              <header class="case-heading">
+                <h2>PDD: More Than a Collection of Technologies</h2>
+                <p>Integrated urban functions, infrastructure and digital management.</p>
+              </header>
+
+              <section class="case-statistics" aria-label="Punggol Digital District planned scale">
+                <div><svg class="refinement-icon stat-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M5 40h38M9 40V22h12v18M27 40V10h12v30M12 27h3m-3 6h3m16-17h3m-3 7h3m-3 7h3m-3 7h3M5 18l8-8 6 5 9-9 6 4 7-5"/></svg><strong>50 ha</strong><span>Mixed-use district</span></div>
+                <div><svg class="refinement-icon stat-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="15" width="36" height="26" rx="4"/><path d="M17 15v-5h14v5M6 25h36m-23 0v4h10v-4"/></svg><strong>28,000</strong><span>Planned jobs</span></div>
+                <div><svg class="refinement-icon stat-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="m4 18 20-11 20 11-20 11L4 18Z M12 23v10c7 6 17 6 24 0V23M43 19v14"/></svg><strong>12,000</strong><span>Planned students</span></div>
+              </section>
+
+              <section class="case-systems" aria-labelledby="case-systems-title">
+                <h3 class="case-systems-heading" id="case-systems-title">Systems integration</h3>
+                <div class="case-diagram" aria-label="Urban functions, digital coordination and physical infrastructure, with conceptual relationships between them">
+                  <div class="case-layer urban-layer">
+                    <h4>Urban functions</h4>
+                    <p>SIT · Digital industries · Community</p>
+                  </div>
+                  <div class="case-relationship" aria-label="Conceptual two-way system relationship"><span>↔</span></div>
+                  <div class="case-layer digital-layer">
+                    <h4>Open Digital Platform</h4>
+                    <p class="odp-role">District-management information</p>
+                    <small>Integrated data exchange, monitoring and control</small>
+                  </div>
+                  <div class="case-relationship" aria-label="Conceptual two-way system relationship"><span>↔</span></div>
+                  <div class="case-layer physical-layer">
+                    <h4>Physical infrastructure</h4>
+                    <p>Cooling · Smart grid · Solar · Waste</p>
+                  </div>
+                </div>
+              </section>
+
+              <div class="case-bottom" data-reveal-step="1">
+                <p class="case-insight-label">Systems-thinking insight</p>
+                <p class="case-takeaway">Centralised cooling can free rooftop space for solar panels and greenery, but system-wide sustainability requires more than efficiency.</p>
+                <p class="case-citations">Sources: Government Technology Agency (2026) · JTC Corporation (2024) · Meadows (2008) · Urban Redevelopment Authority (2026)</p>
+              </div>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="1" aria-label="View 2 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 1</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="3" data-presenter="PRESENTER 1 · Teo Li Tien" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>03 / SIT FIELD VISIT</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content">
+              <p class="slide-kicker">FIELD VISIT · SIT WITHIN PDD</p>
+              <h2>Firsthand observations<em> within PDD</em></h2>
+              <p class="slide-deck">Smart. Sustainable. Live. Work</p>
+              <div class="gallery-grid presentation-gallery">
+                <figure class="field-trip-card">
+                  <div class="field-trip-image-slot model-slot">
+                    <img src="assets/PDD-visit.png" alt="PDD development model" />
+                  </div>
+                  <figcaption class="field-trip-caption">
+                    <strong>PDD DEVELOPMENT MODEL</strong>
+                    <p><b>Integrated district planning</b><br />
+                    <small>Source: Group field visit, 2026.</small>
+                  </figcaption>
+                </figure>
+                <figure class="field-trip-card">
+                  <div class="field-trip-image-slot solar-slot">
+                    <img src="assets/Solar.png" alt="Environmental infrastructure" />
+                  </div>
+                  <figcaption class="field-trip-caption">
+                    <strong>ENVIRONMENTAL INFRASTRUCTURE</strong>
+                    <p><b>Solar PV / passive cooling</b><br />
+                    <small>Source: Group field visit, 2026.</small>
+                  </figcaption>
+                </figure>
+                <figure class="field-trip-card">
+                  <div class="field-trip-image-slot mobility-slot">
+                    <img src="assets/Bicycle.png" alt="Pedestrian and bicycle facilities" />
+                  </div>
+                  <figcaption class="field-trip-caption">
+                    <strong>ACTIVE MOBILITY</strong>
+                    <p><b>Bicycle parking</b><br />
+                    <small>Source: Group field visit, 2026.</small>
+                  </figcaption>
+                </figure>
+              </div>
+              <p class="slide-citation fieldwork-insight" data-reveal-step="1"><strong>FIELDWORK INSIGHT</strong><br />Observed infrastructure demonstrates implementation, but does not independently establish long-term sustainability outcomes.</p>
+              <p class="slide-citation" data-reveal-step="1">Field observations are campus-based and are not district-wide performance evidence.</p>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="1" aria-label="View 3 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 1</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="4" data-presenter="PRESENTER 1 · Teo Li Tien" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>04 / ECOLOGICAL SUSTAINABILITY</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content ecology-content">
+              <header class="ecology-heading">
+                <h2>Environmental Ambition <span>≠ Verified Sustainability</span></h2>
+                <p>What do PDD's environmental performance figures actually tell us?</p>
+              </header>
+
+              <section class="ecology-statistics" aria-label="PDD environmental figures and evidence status">
+                <article class="ecology-stat">
+                  <span class="ecology-status">CAPACITY · REPORTED</span>
+                  <svg class="ecology-stat-icon cooling-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v38M8 14l32 20M8 34l32-20M24 5l-4 5m4-5 4 5m-4 33-4-5m4 5 4-5M8 14l7 1m-7-1 3-6m27 26-7-1m7 1-3 6M8 34l7-1m-7 1 3 6m27-26-7 1m7-1-3-6"/></svg>
+                  <strong>30,000+ <small>RT</small></strong>
+                  <h3>District cooling capacity</h3>
+                  <p>Reported combined capacity; RT is not electricity consumption.</p>
+                  <small class="ecology-citation">JTC Corporation (2024)</small>
+                </article>
+                <article class="ecology-stat">
+                  <span class="ecology-status">DESIGN TARGET</span>
+                  <svg class="ecology-stat-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 42V8h22v34M30 18h10v24M14 15h5m-5 8h5m-5 8h5m5-16h5m-5 8h5m7 2 4 4 6-8M4 42h40"/></svg>
+                  <strong>≥40%</strong>
+                  <h3>Building energy savings</h3>
+                  <p>Target for three Super Low Energy-certified buildings; not a verified district-wide saving.</p>
+                  <small class="ecology-citation">JTC Corporation (2024)</small>
+                </article>
+                <article class="ecology-stat">
+                  <span class="ecology-status">REPORTED PROJECT FIGURE</span>
+                  <svg class="ecology-stat-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="34" cy="13" r="6"/><path d="M34 2v3m0 16v3m11-11h-3m-16 0h-3m19-8-2 2m-11 11-2 2m17 0-2-2M16 20 4 42h28L20 20h-4Zm-5 14h15m-17 4h19m-14-14-4 10m8-10 4 10"/></svg>
+                  <strong>3,000+ <small>MWh/year</small></strong>
+                  <h3>Solar generation</h3>
+                  <p>Whether projected or measured requires verification.</p>
+                  <small class="ecology-citation">Ramboll (2026)</small>
+                </article>
+              </section>
+
+              <div class="ecology-analysis">
+                <section class="ecology-impact" aria-labelledby="ecology-gas-title" data-reveal-step="1">
+                  <h3 id="ecology-gas-title">🔥 Reliance on Natural Gas</h3>
+                  <ul>
+                    <li><span class="ecology-impact-icon ecology-impact-check" aria-hidden="true">✓</span>Reduces emissions</li>
+                    <li><span class="ecology-impact-icon ecology-impact-cross" aria-hidden="true">✕</span>But does not eliminate</li>
+                  </ul>
+                </section>
+
+                <section class="ecology-impact" aria-labelledby="ecology-waste-title" data-reveal-step="1">
+                  <h3 id="ecology-waste-title">🗑️ Pneumatic Waste Collection</h3>
+                  <ul>
+                    <li><span class="ecology-impact-icon ecology-impact-check" aria-hidden="true">✓</span>Reduces collection traffic</li>
+                    <li><span class="ecology-impact-icon ecology-impact-cross" aria-hidden="true">✕</span>But does not prevent waste generation</li>
+                  </ul>
+                </section>
+              </div>
+
+              <p class="ecology-takeaway" data-reveal-step="2">An Efficiency-Oriented Approach → Eco for whom?</p>
+              <footer class="ecology-footer" data-reveal-step="2">
+                <p>PDD remains under development; incomplete operational evidence may reflect timing.</p>
+                <p>Sources: Energy Market Authority (2026) · JTC Corporation (2024) · McPhearson et al. (2022) · Meadows (2008) · Ramboll (2026)</p>
+              </footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="2" aria-label="View 4 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 2</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="5" data-presenter="PRESENTER 2 · VIEWS 5–7" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>05 / SMART URBANISM</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content smart-urbanism-content">
+              <header class="smart-urbanism-heading">
+                <h2>From Smart City 1.0 to Smart City 2.0</h2>
+                <p>From technological optimisation to human-centred outcomes</p>
+              </header>
+
+              <section class="smart-comparison" aria-label="Smart urbanism analytical approaches">
+                <article class="smart-approach smart-approach-technology">
+                  <span class="smart-approach-tag">SMART CITY 1.0</span>
+                  <h3><svg class="smart-approach-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 42h40M8 42V21h13v21M26 42V8h14v34M12 27h5m-5 7h5m13-20h5m-5 8h5m-5 8h5m-5 8h5"/><circle cx="19" cy="8" r="2"/><circle cx="7" cy="8" r="2"/><path d="M9 8h8m4 0h5"/></svg>Technology-led</h3>
+                  <ul>
+                    <li>Corporate interests</li>
+                    <li>Data-driven management</li>
+                    <li>Operational optimisation</li>
+                  </ul>
+                  <p class="smart-citations">Hollands (2008) · Kitchin (2014) · Söderström et al. (2014)</p>
+                </article>
+                <article class="smart-approach smart-approach-human">
+                  <span class="smart-approach-tag">SMART CITY 2.0</span>
+                  <h3><svg class="smart-approach-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="13" r="6"/><circle cx="34" cy="15" r="5"/><path d="M4 40v-4c0-7 5-12 12-12s12 5 12 12v4H4Zm24-14c7 0 12 4 12 10v4H30"/><path d="M31 7s-4-5-8-1c-4 4 1 9 8 13 7-4 12-9 8-13-4-4-8 1-8 1Z"/></svg>Human-centred</h3>
+                  <ul>
+                    <li>Addressing social challenges</li>
+                    <li>Inclusion and well-being</li>
+                    <li>Technology serving human needs</li>
+                  </ul>
+                  <p class="smart-citations">Trencher (2019) · Trencher &amp; Karvonen (2019)</p>
+                </article>
+              </section>
+
+              <p class="smart-fit-heading" data-reveal-step="1">WHERE DOES PDD FIT?</p>
+
+              <section class="smart-pdd-application" aria-label="PDD documented capabilities and outcomes requiring evaluation" data-reveal-step="1">
+                <div class="smart-pdd-capability">
+                  <span>DOCUMENTED TECHNOLOGICAL CAPABILITY</span>
+                  <strong>ODP · Real-time data · Digital-twin capabilities</strong>
+                </div>
+                <span class="smart-pdd-arrow" aria-hidden="true">→</span>
+                <div class="smart-pdd-outcomes">
+                  <span>HUMAN-CENTRED OUTCOMES REQUIRING EVALUATION</span>
+                  <strong>Well-being · Inclusion · Participation</strong>
+                </div>
+              </section>
+
+              <p class="smart-critical-question" data-reveal-step="1">Does PDD's technological integration deliver broader social value beyond operational efficiency?</p>
+              <footer class="smart-urbanism-sources" data-reveal-step="1">Sources: Hollands (2008) · JTC Corporation (2024) · Kitchin (2014) · Söderström et al. (2014) · Trencher (2019) · Trencher &amp; Karvonen (2019)</footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="1" aria-label="View 5 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 1</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="6" data-presenter="PRESENTER 2 · VIEWS 5–7" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>06 / SMART OPERATIONS</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content smart-operations-content">
+              <header class="smart-operations-heading">
+                <h2>When Sensors Meet Everyday Work</h2>
+                <p>Sensor-enabled cleaning at SIT: operational efficiency versus broader sustainability</p>
+              </header>
+
+              <section class="operations-process" aria-label="Illustrative four-stage sensor-enabled cleaning process" data-reveal-step="1">
+                <div class="operations-stage">
+                  <span class="operations-step">01</span>
+                  <h3>Sensors</h3>
+                  <p>Movement and environmental conditions</p>
+                </div>
+                <span class="operations-arrow" aria-hidden="true">→</span>
+                <div class="operations-stage">
+                  <span class="operations-step">02</span>
+                  <h3>Data integration</h3>
+                  <p>Integrated building-management system</p>
+                </div>
+                <span class="operations-arrow" aria-hidden="true">→</span>
+                <div class="operations-stage">
+                  <span class="operations-step">03</span>
+                  <h3>Operational decisions</h3>
+                  <p>Cleaning priorities and resource allocation</p>
+                </div>
+                <span class="operations-arrow" aria-hidden="true">→</span>
+                <div class="operations-stage">
+                  <span class="operations-step">04</span>
+                  <h3>Cleaning response</h3>
+                  <p>Potentially more responsive services</p>
+                </div>
+              </section>
+              <p class="operations-process-note" data-reveal-step="1">Illustrative process based on explanations during the group SIT field visit (2026); the exact workflow and its effectiveness were not independently verified.</p>
+
+              <section class="operations-critique" aria-label="Potential benefits">
+                <article class="operations-panel operations-footprint" data-reveal-step="1">
+                  <h3><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="12" width="24" height="24" rx="4"/><path d="M18 18h12v12H18zM18 4v8m12-8v8M18 36v8m12-8v8M4 18h8m-8 12h8m24-12h8m-8 12h8"/></svg>Digital footprint</h3>
+                  <p class="operations-benefit"><span>Potential benefit</span>More efficient resource allocation.</p>
+                  <p class="operations-citation">Bibri &amp; Krogstie (2017) · Lange &amp; Santarius (2020)</p>
+                </article>
+                <article class="operations-panel operations-people" data-reveal-step="2">
+                  <h3><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="15" r="6"/><circle cx="33" cy="17" r="5"/><path d="M5 39v-4c0-7 5-11 12-11s12 4 12 11v4H5Zm26-13c7 0 12 4 12 10v3H33"/></svg>People and work</h3>
+                  <p class="operations-benefit"><span>Potential benefit</span>More responsive services and reduced unnecessary cleaning tasks.</p>
+                  <p class="operations-citation">Group field visit to SIT (2026) · Trencher (2019)</p>
+                </article>
+              </section>
+
+              <p class="operations-takeaway" data-reveal-step="3">Operational productivity does not automatically establish human-centred or net environmental benefits.</p>
+              <footer class="operations-sources" data-reveal-step="3">Sources: Bibri &amp; Krogstie (2017) · Group field visit to SIT (2026) · Lange &amp; Santarius (2020) · Trencher (2019)</footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="3" aria-label="View 6 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 3</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="7" data-presenter="PRESENTER 2 · VIEWS 5–7" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>07 / HUMAN-CENTRED DEVELOPMENT</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content human-development-content">
+              <header class="human-development-heading">
+                <h2>Smart for Whom?</h2>
+                <p>Human-centred design versus demonstrated social outcomes</p>
+              </header>
+
+              <section class="human-outcome-panels" aria-label="Human-centred initiatives, intended benefits and questions for evaluation">
+                <article class="human-outcome-panel">
+                  <span class="human-panel-number">01</span>
+                  <h3><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="11" cy="35" r="7"/><circle cx="37" cy="35" r="7"/><path d="m11 35 10-17 8 17H11l8-12h13l5 12M19 18h-6"/></svg>Active mobility</h3>
+                  <div class="human-panel-stage">
+                    <span>DESIGN / INITIATIVE</span>
+                    <p>Car-light campus planning, pedestrian infrastructure and bicycle parking at SIT.</p>
+                  </div>
+                  <span class="human-stage-arrow" aria-hidden="true">↓</span>
+                  <div class="human-panel-stage">
+                    <span>INTENDED BENEFIT</span>
+                    <p>Active mobility, healthier lifestyles and accessibility.</p>
+                  </div>
+                  <div class="human-critical-question" data-reveal-step="1">
+                    <span>CRITICAL QUESTION</span>
+                    <strong>Are travel behaviours actually changing?</strong>
+                  </div>
+                  <p class="human-panel-citation" data-reveal-step="1">Group SIT field visit (2026) · Trencher &amp; Karvonen (2019)</p>
+                </article>
+
+                <article class="human-outcome-panel">
+                  <span class="human-panel-number">02</span>
+                  <h3><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 41S6 30 6 17a10 10 0 0 1 18-6 10 10 0 0 1 18 6c0 13-18 24-18 24Z"/></svg>Occupant well-being</h3>
+                  <div class="human-panel-stage">
+                    <span>DESIGN / INITIATIVE</span>
+                    <p>Passive cooling, indoor environmental monitoring and hybrid ventilation introduced during the SIT field visit.</p>
+                  </div>
+                  <span class="human-stage-arrow" aria-hidden="true">↓</span>
+                  <div class="human-panel-stage">
+                    <span>INTENDED BENEFIT</span>
+                    <p>Thermal comfort, indoor environmental quality and well-being.</p>
+                  </div>
+                  <div class="human-critical-question" data-reveal-step="2">
+                    <span>CRITICAL QUESTION</span>
+                    <strong>Are comfort and health outcomes improving?</strong>
+                  </div>
+                  <p class="human-panel-citation" data-reveal-step="2">Group SIT field visit (2026) · JTC Corporation (2024)</p>
+                </article>
+
+                <article class="human-outcome-panel">
+                  <span class="human-panel-number">03</span>
+                  <h3><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="13" r="6"/><circle cx="10" cy="20" r="4"/><circle cx="38" cy="20" r="4"/><path d="M12 40v-5c0-7 5-12 12-12s12 5 12 12v5H12ZM2 39v-4c0-5 3-8 8-8m36 12v-4c0-5-3-8-8-8"/></svg>Inclusive opportunities</h3>
+                  <div class="human-panel-stage">
+                    <span>DESIGN / INITIATIVE</span>
+                    <p>PDD's decentralisation strategy brings employment and education closer to residential communities.</p>
+                  </div>
+                  <span class="human-stage-arrow" aria-hidden="true">↓</span>
+                  <div class="human-panel-stage">
+                    <span>INTENDED BENEFIT</span>
+                    <p>Improved access to jobs, learning and amenities.</p>
+                  </div>
+                  <div class="human-critical-question" data-reveal-step="3">
+                    <span>CRITICAL QUESTION</span>
+                    <strong>Who actually benefits from these opportunities?</strong>
+                  </div>
+                  <p class="human-panel-citation" data-reveal-step="3">JTC Corporation (2024) · Urban Redevelopment Authority (2026)</p>
+                </article>
+              </section>
+
+              <p class="human-development-takeaway" data-reveal-step="4">Providing human-centred infrastructure does not automatically demonstrate inclusive benefits or improved well-being.</p>
+              <footer class="human-development-sources" data-reveal-step="4">Sources: Group SIT field visit (2026) · JTC Corporation (2024) · Trencher &amp; Karvonen (2019) · Urban Redevelopment Authority (2026)</footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="4" aria-label="View 7 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 4</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="8" data-presenter="PRESENTER 3 · VIEWS 8–11" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>08 / GOVERNANCE &amp; POWER</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content governance-view-content">
+              <header class="governance-view-heading">
+                <h2>Who Controls the System?</h2>
+                <p>Institutional coordination versus public accountability</p>
+              </header>
+
+              <section class="governance-relationship-diagram" aria-label="Conceptual relationships among PDD institutions, the Open Digital Platform and affected stakeholders">
+                <div class="governance-institutions">
+                  <p class="governance-group-label">INSTITUTIONAL ACTORS</p>
+                  <div class="governance-institution-layout">
+                    <div class="governance-actor-stack">
+                      <article class="governance-actor">
+                        <div class="governance-image-placeholder">
+                          <img src="assets/JTC-logo.png" alt="JTC Corporation logo" />
+                        </div>
+                        <h3>JTC Corporation</h3>
+                        <p>Master planner · Developer · Landlord</p>
+                      </article>
+                      <div class="governance-collaboration">
+                        <span class="governance-solid-line" aria-hidden="true"></span>
+                        <small>Documented ODP co-development</small>
+                      </div>
+                      <article class="governance-actor">
+                        <div class="governance-image-placeholder">
+                          <img src="assets/GovTech-Logo.gif" alt="GovTech logo" />
+                        </div>
+                        <h3>GovTech</h3>
+                        <p>Co-developer of the ODP</p>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="governance-platform-connection">
+                    <span aria-hidden="true"></span>
+                    <small>Institutional roles and platform development</small>
+                    <span aria-hidden="true"></span>
+                  </div>
+                  <article class="governance-platform" data-reveal-step="1">
+                    <span>DIGITAL INFRASTRUCTURE</span>
+                    <h3>Open Digital Platform (ODP)</h3>
+                    <p>Integrated data exchange, monitoring and control</p>
+                    <small>Technical functions are distinct from governance authority.</small>
+                  </article>
+                </div>
+
+                <div class="governance-stakeholder-connection" data-reveal-step="2">
+                  <span class="governance-dashed-line" aria-hidden="true"></span>
+                  <span class="governance-stakeholder-arrow" role="img" aria-label="Conceptual relationship">→</span>
+                  <span class="governance-dashed-line" aria-hidden="true"></span>
+                </div>
+
+                <div class="governance-stakeholders" data-reveal-step="2">
+                  <p class="governance-group-label">
+                    <svg class="governance-community-icon" viewBox="0 0 32 24" aria-hidden="true" focusable="false">
+                      <circle cx="16" cy="5" r="3" />
+                      <circle cx="7" cy="8" r="2.5" />
+                      <circle cx="25" cy="8" r="2.5" />
+                      <path d="M10 21v-2a6 6 0 0 1 12 0v2zM1 21v-2a6 6 0 0 1 9-5.2M31 21v-2a6 6 0 0 0-9-5.2" />
+                    </svg>
+                    AFFECTED STAKEHOLDERS
+                  </p>
+                  <div class="governance-stakeholder-list">
+                    <span>Tenants and operators</span>
+                    <span>Workers and students</span>
+                    <span>Surrounding Punggol residents</span>
+                  </div>
+                </div>
+
+                <p class="governance-diagram-caption" data-reveal-step="2">Conceptual diagram of institutional roles and affected stakeholders; not a verified hierarchy of authority or data ownership.</p>
+              </section>
+
+              <section class="governance-analysis-panels" aria-label="Governance strengths and accountability questions">
+                <article class="governance-analysis-panel governance-strength" data-reveal-step="3">
+                  <span>INSTITUTIONAL STRENGTH</span>
+                  <p>Coordinated planning, digital integration and district management.</p>
+                </article>
+                <article class="governance-analysis-panel governance-accountability" data-reveal-step="3">
+                  <span>ACCOUNTABILITY QUESTION</span>
+                  <p>Who shapes priorities, accesses data and reviews decisions?</p>
+                </article>
+              </section>
+
+              <p class="governance-critical-takeaway" data-reveal-step="4">Coordinated delivery does not necessarily ensure meaningful participation or public accountability.</p>
+              <footer class="governance-view-sources" data-reveal-step="4">Sources: Cardullo &amp; Kitchin (2019) · Government Technology Agency (2026) · JTC Corporation (2024)</footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="4" aria-label="View 8 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 4</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="9" data-presenter="PRESENTER 3 · Hairong" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>09 / ENVIRONMENTAL JUSTICE</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content environmental-justice-content">
+              <header class="environmental-justice-heading">
+                <h2>Who Benefits, Who Decides?</h2>
+                <p>Applying Schlosberg's (2007) environmental justice framework to PDD</p>
+              </header>
+
+              <section class="justice-dimensions-grid" aria-label="Four environmental justice dimensions applied to PDD">
+                <article class="justice-dimension-panel" data-reveal-step="1">
+                  <header class="justice-dimension-heading">
+                    <span aria-hidden="true">↗</span>
+                    <div>
+                      <h3>Distribution</h3>
+                      <p>Who receives the benefits?</p>
+                    </div>
+                  </header>
+                  <div class="justice-evidence">
+                    <span>PDD EVIDENCE</span>
+                    <p>Planned employment and amenities may benefit surrounding communities.</p>
+                    <small>JTC Corporation (2024)</small>
+                  </div>
+                  <p class="justice-critical-question">Who can actually access these opportunities?</p>
+                </article>
+
+                <article class="justice-dimension-panel" data-reveal-step="2">
+                  <header class="justice-dimension-heading">
+                    <span aria-hidden="true">◉</span>
+                    <div>
+                      <h3>Recognition</h3>
+                      <p>Whose needs are made visible?</p>
+                    </div>
+                  </header>
+                  <div class="justice-evidence">
+                    <span>PDD EVIDENCE</span>
+                    <p>Published ODP descriptions emphasise operational indicators such as energy, cooling and security.</p>
+                    <small>Government Technology Agency (2026)</small>
+                  </div>
+                  <p class="justice-critical-question">Are well-being and everyday experiences equally assessed?</p>
+                </article>
+
+                <article class="justice-dimension-panel" data-reveal-step="3">
+                  <header class="justice-dimension-heading">
+                    <span aria-hidden="true">◇</span>
+                    <div>
+                      <h3>Capabilities</h3>
+                      <p>What opportunities can people realise?</p>
+                    </div>
+                  </header>
+                  <div class="justice-evidence">
+                    <span>PDD EVIDENCE</span>
+                    <p>Jobs and education are planned closer to residential communities.</p>
+                    <small>JTC Corporation (2024)</small>
+                  </div>
+                  <p class="justice-critical-question">Can residents meaningfully benefit?</p>
+                </article>
+
+                <article class="justice-dimension-panel" data-reveal-step="4">
+                  <header class="justice-dimension-heading">
+                    <span aria-hidden="true">↔</span>
+                    <div>
+                      <h3>Participation</h3>
+                      <p>Who influences decisions?</p>
+                    </div>
+                  </header>
+                  <div class="justice-evidence">
+                    <span>PDD EVIDENCE</span>
+                    <p>PDD demonstrates coordinated institutional development.</p>
+                    <small>Government Technology Agency (2026)</small>
+                  </div>
+                  <p class="justice-critical-question">How can affected groups shape priorities?</p>
+                </article>
+              </section>
+
+              <p class="environmental-justice-insight" data-reveal-step="5">Governance influences not only how PDD operates, but whose needs and outcomes are recognised as sustainability priorities.</p>
+              <footer class="environmental-justice-sources" data-reveal-step="5">Sources: Government Technology Agency (2026) · JTC Corporation (2024) · Meadows (2008) · Schlosberg (2007)</footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="5" aria-label="View 9 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 5</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide" data-view="10" data-presenter="PRESENTER 3 · VIEWS 8–11" hidden>
+            <div class="slide-overline">
+              <span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span>
+              <span>10 / INTEGRATED SETS EVALUATION</span>
+            </div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content sets-evaluation-content">
+              <header class="sets-evaluation-heading">
+                <h2>Integrated Infrastructure. <em>Conditional Sustainability.</em></h2>
+                <p>Connecting ecological sustainability, Smart City 2.0 and governance</p>
+              </header>
+
+              <figure class="sets-evaluation-figure" aria-label="Conceptual SETS synthesis linking technological, ecological and social systems through governance">
+                <div class="sets-evaluation-model">
+                  <svg class="sets-evaluation-arrows" viewBox="0 0 1000 285" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <marker id="sets-arrow" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth">
+                        <path d="M0,0 L6,4 L0,8" fill="none" stroke="#d97821" stroke-width="1.5" />
+                      </marker>
+                    </defs>
+                    <path d="M360 92 L200 180" data-reveal-step="2" />
+                    <path d="M640 92 L800 180" data-reveal-step="3" />
+                    <path d="M350 245 L650 245" data-reveal-step="3" />
+                  </svg>
+                  <article class="sets-evaluation-node sets-evaluation-technology" data-reveal-step="2">
+                    <span aria-hidden="true">◇</span>
+                    <strong>TECHNOLOGICAL</strong>
+                    <p>Cooling · ODP · Sensors</p>
+                    <small>Integrated infrastructure</small>
+                  </article>
+                  <article class="sets-evaluation-node sets-evaluation-ecology" data-reveal-step="1">
+                    <span aria-hidden="true">↗</span>
+                    <strong>ECOLOGICAL</strong>
+                    <p>Energy · Emissions · Biodiversity</p>
+                    <small>Outcomes require assessment</small>
+                  </article>
+                  <article class="sets-evaluation-node sets-evaluation-social" data-reveal-step="3">
+                    <span aria-hidden="true">+</span>
+                    <strong>SOCIAL</strong>
+                    <p>Well-being · Employment · Inclusion</p>
+                    <small>Benefits require evidence</small>
+                  </article>
+                </div>
+                <div class="sets-evaluation-governance" data-reveal-step="4">
+                  <strong>GOVERNANCE</strong>
+                  <span>GOALS, RULES AND INDICATORS</span>
+                </div>
+                <figcaption data-reveal-step="4">Conceptual SETS synthesis based on the group's evaluation; not a measured sustainability score.</figcaption>
+              </figure>
+
+              <section class="sets-evaluation-panels" aria-label="Critical finding and counterargument">
+                <article data-reveal-step="5">
+                  <span>OUR CRITICAL FINDING</span>
+                  <p>Technological performance is more explicitly quantified than wider ecological and social outcomes in available documentation.</p>
+                </article>
+                <article data-reveal-step="6">
+                  <span>IMPORTANT COUNTERARGUMENT</span>
+                  <p>State-led coordination enables delivery; incomplete evidence may reflect ongoing development.</p>
+                </article>
+              </section>
+
+              <p class="sets-evaluation-takeaway" data-reveal-step="7">PDD's technological integration is evident, but comprehensive sustainability remains to be demonstrated.</p>
+              <footer class="sets-evaluation-citations" data-reveal-step="7">
+                <span>Sources: JTC Corporation (2024) · McPhearson et al. (2022) · Meadows (2008) · Schlosberg (2007)</span>
+              </footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="7" aria-label="View 10 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 7</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="presentation-slide conclusion-slide" data-view="11" data-presenter="PRESENTER 1 · Teo Li Tien" hidden>
+            <div class="slide-overline"><span>CCS5209 · URBAN SUSTAINABILITY FUTURES</span><span>11 / RECOMMENDATIONS + CONCLUSION</span></div>
+            <span class="cover-brand-logo" role="img" aria-label="National University of Singapore">
+              <img src="assets/NUS-logo-trimmed.jpg" alt="NUS" />
+            </span>
+            <div class="slide-content view-eleven-content">
+              <p class="slide-kicker">RECOMMENDATIONS · CONCLUSION</p>
+              <h2>From Smart Ambitions to <em>Sustainable Outcomes.</em></h2>
+              <div class="conclusion-recommendations">
+                <div data-reveal-step="1"><span>01</span><p><strong><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M39 8C22 8 10 13 9 26c0 8 6 13 13 12C35 36 39 21 39 8Z M10 40c7-10 13-15 23-22"/></svg>Environmental</strong><small>Publish baselines and biodiversity indicators.</small></p></div>
+                <div data-reveal-step="2"><span>02</span><p><strong><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="12" width="24" height="24" rx="4"/><path d="M18 18h12v12H18zM18 4v8m12-8v8M18 36v8m12-8v8M4 18h8m-8 12h8m24-12h8m-8 12h8"/></svg>Technological</strong><small>Assess digital footprints against efficiency gains.</small></p></div>
+                <div data-reveal-step="3"><span>03</span><p><strong><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="13" r="6"/><circle cx="10" cy="20" r="4"/><circle cx="38" cy="20" r="4"/><path d="M12 40v-5c0-7 5-12 12-12s12 5 12 12v5H12Z"/></svg>Social</strong><small>Measure well-being, accessibility and opportunities.</small></p></div>
+                <div data-reveal-step="4"><span>04</span><p><strong><svg class="refinement-icon heading-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6v34M10 12h28M14 12 6 28h16L14 12Zm20 0-8 16h16l-8-16ZM16 41h16"/></svg>Governance</strong><small>Strengthen transparency, review and participation.</small></p></div>
+              </div>
+              <p class="view-eleven-supporting" data-reveal-step="5">PDD’s broader sustainability contribution remains promising but conditional.</p>
+              <p class="view-eleven-judgement" data-reveal-step="6">Sustainability must be demonstrated, not assumed.</p>
+              <footer class="view-eleven-footer" data-reveal-step="6">Recommendations: Group's own proposals based on the evaluation.</footer>
+              <div class="slide-reveal-controls" data-reveal-controls data-reveal-total="6" aria-label="View 11 reveal controls">
+                <span class="slide-reveal-progress" data-reveal-progress aria-live="polite">Step 0 of 6</span>
+                <div>
+                  <button type="button" data-reveal-next aria-label="Reveal next step"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5v14l11-7zM19 5v14" /></svg></button>
+                  <button type="button" data-reveal-all aria-label="Reveal all"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg></button>
+                  <button type="button" data-reveal-reset aria-label="Reset reveals"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11a9 9 0 1 1 2.6 6.4M3 4v7h7" /></svg></button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="presentation-controls">
+          <button class="slide-arrow" id="previous-view" type="button" aria-label="Previous view">← <span>Previous</span></button>
+          <nav class="view-navigation" id="view-navigation" aria-label="Choose presentation view"></nav>
+          <button class="slide-arrow next-arrow" id="next-view" type="button" aria-label="Next view"><span>Next</span> →</button>
+          <button class="fullscreen-button" id="fullscreen-button" type="button">Full screen</button>
+          <button class="references-toggle" type="button" data-open-references popovertarget="references-popover" popovertargetaction="show">
+            References &amp; Acknowledgements
+          </button>
+        </div>
+
+        <div class="speaker-notes" id="speaker-notes" hidden>
+          <div class="notes-heading">
+            <label for="notes-editor">Speaker notes · View <span id="notes-view-number">1</span></label>
+            <span>Private to this browser · not shown on the slide</span>
+          </div>
+          <textarea id="notes-editor" rows="14" placeholder="Edit this view's narration or add presentation cues."></textarea>
+          <p id="notes-status" aria-live="polite">Complete script preloaded; edits save automatically in this browser.</p>
+          <template data-speaker-notes="1"><span>Good morning everyone. Today, our group critically evaluates Punggol Digital District, or PDD, as an example of smart and ecological urbanism in Singapore. PDD integrates digital technologies, environmental infrastructure, education and economic development. But technological integration does not automatically establish sustainability. Our central question is: To what extent does PDD translate its smart and ecological ambitions into meaningful environmental, social and governance outcomes? We examine this through ecological sustainability, Smart City 2.0, and governance and justice, using the social-ecological-technological systems, or SETS, framework. Our argument is that PDD demonstrates substantial technological integration, but its wider sustainability contribution remains conditional on verified outcomes and accountable governance.</span></template>
+          <template data-speaker-notes="2"><span>PDD is a 50-hectare mixed-use district developed by JTC Corporation, bringing together the Singapore Institute of Technology, digital-economy industries and community amenities. With approximately 28,000 planned jobs and 12,000 students, it supports Singapore's decentralisation strategy of bringing employment and education closer to homes. Its infrastructure includes interconnected district cooling plants, renewable energy, a smart grid and pneumatic waste collection. These systems are supported by the Open Digital Platform, which integrates district-management information. The interesting question is how these systems interact. For example, centralised cooling can free rooftop space for solar panels and greenery, demonstrating how one infrastructure decision influences energy management and land use. However, systems thinking also highlights that improving individual components does not necessarily improve the sustainability of the entire district.</span></template>
+          <template data-speaker-notes="3"><span>To complement our documentary research, our group conducted a field visit to SIT within PDD. [Show the photograph of the instructor explaining the physical development model.] The visit introduced four development priorities: “Smart”, “Sustainable”, “Live” and “Work”. We learned about integrated building management, sensor-enabled cleaning, passive cooling, solar photovoltaic installations and active-mobility infrastructure. One interesting feature was how smart systems were intended to support everyday operations. For example, sensor information could help cleaning staff respond to actual conditions rather than relying entirely on fixed schedules. [Show photographs of the solar installation and pedestrian or bicycle facilities.] We also observed how campus planning incorporates environmental design and active mobility. The car-light approach and bicycle parking were presented as measures encouraging healthier lifestyles. These examples demonstrate that smart and ecological strategies are not merely conceptual ambitions; they are reflected in physical infrastructure and operational arrangements. However, the visit also revealed an important limitation. We could observe infrastructure and learn about its intended functions, but we could not independently verify its long-term performance. Moreover, our observations were mainly campus-based and should not be generalised to the entire PDD. This distinction between implemented features and demonstrated outcomes guides our evaluation.</span></template>
+          <template data-speaker-notes="4"><span>Our first analytical perspective concerns ecological sustainability. PDD's interconnected district cooling plants have a reported combined capacity exceeding 30,000 refrigeration tons. JTC also reports that three Super Low Energy-certified buildings target at least 40% energy savings, with further savings potentially achievable through AI. These figures demonstrate the scale of PDD's ambitions, but they represent different measures: infrastructure capacity, design targets and projected improvements. [Point to the evidence comparison.] Reported district-cooling savings of up to 30% require a clearly defined comparison baseline. Similarly, projected solar generation exceeding 3,000 megawatt-hours annually must be considered against total district electricity demand. There is also a distinction between relative and absolute efficiency. Singapore's electricity generation remains predominantly dependent on natural gas. Therefore, improved efficiency reduces energy demand without eliminating associated emissions. Systems thinking also reveals infrastructure dependencies. Centralised cooling offers economies of scale, but its performance depends on occupancy, maintenance and coordinated management, particularly during phased development. Finally, ecological sustainability extends beyond energy. Pneumatic waste collection may reduce collection traffic without preventing waste generation. Biodiversity walkways may support ecological connectivity, but their effectiveness requires ecological assessment. Our conclusion is therefore not that PDD's initiatives are ineffective. Rather, technological efficiency and design certification do not independently establish net ecological sustainability. This leads to our next question: do smart technologies also deliver meaningful benefits for people?</span></template>
+          <template data-speaker-notes="5"><span>Our second perspective examines PDD through the Smart City 2.0 debate. Early smart-city models have been criticised for prioritising technological innovation, corporate interests and data-driven optimisation. Smart City 2.0 shifts attention towards addressing social challenges and improving human well-being. [Point to the Smart City 1.0 versus 2.0 comparison.] PDD provides an interesting case because its Open Digital Platform integrates information across district operations through real-time data and digital-twin capabilities. This offers opportunities for coordinated management and technological experimentation. However, the critical question is not how advanced the technology is, but whether it delivers broader social value beyond operational efficiency.</span></template>
+          <template data-speaker-notes="6"><span>One practical example comes from our SIT field visit. We learned about sensor-enabled cleaning systems that use information about movement and environmental conditions to support operational decisions. [Point to the process diagram.] The process involves collecting sensor information, integrating it through building-management systems and using it to inform cleaning operations. This may improve productivity by allocating resources according to actual needs. However, productivity and human well-being are not necessarily the same. For example, does improved monitoring reduce unnecessary workloads and improve working conditions? Or could automation introduce new pressures and skills requirements? PDD's automated management ambitions also raise questions about employment transitions. Although digital development may create new jobs, these opportunities may require skills different from those affected by automation. There is another issue often overlooked in smart-city discussions: digital technologies have their own environmental footprint. Sensors, computing infrastructure and hardware require electricity, materials and eventual replacement. Lange and Santarius also highlight how rebound effects can offset some efficiency gains. This does not mean digitalisation is environmentally harmful overall. Rather, its net benefits require assessment. The wider question is whether technological productivity creates measurable environmental and social value, rather than simply improving existing operations.</span></template>
+          <template data-speaker-notes="7"><span>Our field visit also highlighted how PDD incorporates human-centred design. [Show photographs of pedestrian areas, bicycle parking or passive cooling features.] SIT's car-light planning and bicycle parking were presented as measures supporting active mobility. (car park) Passive cooling, indoor air-quality monitoring and hybrid ventilation were introduced as approaches to improving occupant comfort while managing energy demand. These features demonstrate that PDD's ambitions extend beyond digital infrastructure. However, design intentions do not automatically establish actual outcomes. Bicycle parking does not necessarily demonstrate increased cycling, while environmental monitoring alone does not establish better health or thermal comfort. There is also a question of who benefits. PDD's key users include tenants, workers and students. Yet its decentralisation strategy also aims to bring opportunities closer to surrounding residential communities. Whether these wider benefits materialise depends on accessibility, employment opportunities and how people use the district. This reflects the Smart City 2.0 debate: technological innovation should be evaluated through its contribution to people's needs, not merely its operational performance. PDD therefore demonstrates human-centred design ambitions, but evidence of inclusive opportunities and improved everyday experiences remains important. This leads to the governance question: who determines which benefits are prioritised and how success is measured?</span></template>
+          <template data-speaker-notes="8"><span>Our third perspective examines governance, power and justice. PDD's governance is state-led and integrated. JTC acts as master planner, developer and landlord, while JTC and GovTech jointly developed the Open Digital Platform. This creates an important advantage: coordinated planning and delivery. However, institutional coordination also raises questions about who defines development priorities, controls data access and determines acceptable trade-offs. Cardullo and Kitchin caution that smart-city participation can position citizens as data sources or service consumers rather than decision-makers. Available PDD documentation emphasises institutional collaboration more clearly than mechanisms for users and surrounding communities to influence digital governance. This does not establish that participation is absent. Nevertheless, it limits what can currently be demonstrated about participatory accountability. Therefore, state-led coordination may strengthen institutional capacity without automatically ensuring public accountability.</span></template>
+          <template data-speaker-notes="9"><span>Schlosberg's environmental justice framework helps us examine four dimensions. [Point to the four-part justice diagram.] First, distribution concerns who receives the benefits. PDD's planned employment and amenities may benefit surrounding communities, but their accessibility depends on institutional decisions and individual circumstances. Second, recognition concerns whose needs are acknowledged. The ODP's published descriptions emphasise operational indicators such as energy, cooling and security. However, well-being and everyday experiences require additional forms of evidence. Third, capabilities concern whether people gain meaningful opportunities. Bringing jobs and education closer to homes may improve access, but residents also need the skills and opportunities to benefit. Finally, participation concerns who influences decisions. Meadows' leverage-points framework highlights how system goals and rules shape outcomes. Applied to PDD, the critical issue is who has the authority to shape these priorities rather than merely operate within predetermined objectives. Governance therefore influences what counts as evidence of sustainability.</span></template>
+          <template data-speaker-notes="10"><span>Let us now bring the three perspectives together. [Return to the integrated SETS diagram.] Our ecological analysis showed that efficiency targets and infrastructure capacity do not independently establish net environmental benefits. Our Smart City 2.0 analysis showed that operational productivity and human-centred design do not automatically establish inclusive social outcomes. Our governance analysis then raised questions about who determines the objectives and indicators used to evaluate these outcomes. These concerns are interconnected. For example, a sensor-enabled management system may improve operational efficiency, but its wider sustainability contribution also depends on resource consumption, workers' experiences and institutional decisions governing its use. This is where the SETS framework becomes particularly useful. It encourages us to evaluate technological infrastructure alongside ecological conditions and social institutions, rather than treating them as separate systems. Our original interpretation is that PDD's technological performance is more explicitly quantified than its wider ecological and social outcomes in the available project documentation. However, an important counterargument must be recognised. PDD remains under development, and its state-led coordination offers genuine institutional advantages. Missing operational evidence may reflect timing rather than poor performance. Our assessment therefore concerns what can currently be demonstrated, not a definitive judgement that PDD is unsustainable.</span></template>
+          <template data-speaker-notes="11"><span>Based on our evaluation, we propose four priorities. First, environmental: publish operational baselines, lifecycle assessments and ecological indicators. Second, technological: assess digital infrastructure's resource footprint against its efficiency gains. Third, social: evaluate well-being, accessibility and workforce opportunities, including benefits for surrounding communities. Fourth, governance: strengthen transparency, independent review and meaningful participation. These recommendations are connected. Environmental and social indicators provide evidence for evaluation, while participation helps determine which outcomes should receive priority. To conclude, PDD demonstrates substantial integration of smart and ecological infrastructure. However, its broader sustainability contribution remains promising but conditional. For other smart-eco cities, the key lesson is that sustainability must be demonstrated, not assumed. Thank you. We welcome your questions.</span></template>
+        </div>
+      </section>
+      <section class="references-popover" id="references-popover" popover="auto" role="dialog" aria-modal="false" aria-labelledby="references-title">
+        <div class="references-panel-heading">
+          <div>
+            <p class="references-kicker">CCS5209 · PUNGGOL DIGITAL DISTRICT</p>
+            <h2 id="references-title">REFERENCES &amp; ACKNOWLEDGEMENTS</h2>
+          </div>
+          <button class="references-close" type="button" popovertarget="references-popover" popovertargetaction="hide" aria-label="Close references">Close</button>
+        </div>
+        <div class="references-panel-content">
+          <section aria-labelledby="references-list-title">
+            <h3 id="references-list-title">REFERENCES</h3>
+            <ol class="apa-list">
+              <li class="reference-entry">Bibri, S. E., &amp; Krogstie, J. (2017). Smart sustainable cities of the future: An extensive interdisciplinary literature review. <em>Sustainable Cities and Society, 31</em>, 183–212. <a href="https://doi.org/10.1016/j.scs.2017.02.016" target="_blank" rel="noopener">https://doi.org/10.1016/j.scs.2017.02.016</a></li>
+              <li class="reference-entry" id="ref-3">Cardullo, P., &amp; Kitchin, R. (2019). Being a “citizen” in the smart city: Up and down the scaffold of smart citizen participation in Dublin, Ireland. <em>GeoJournal, 84</em>(1), 1–13. <a href="https://doi.org/10.1007/s10708-018-9845-8" target="_blank" rel="noopener">https://doi.org/10.1007/s10708-018-9845-8</a></li>
+              <li class="reference-entry">Energy Market Authority. (2026). <em>Singapore energy statistics: Chapter 4, energy balance.</em> <a href="https://www.ema.gov.sg/resources/singapore-energy-statistics/chapter4" target="_blank" rel="noopener">https://www.ema.gov.sg/resources/singapore-energy-statistics/chapter4</a></li>
+              <li class="reference-entry" id="ref-2">Government Technology Agency. (2026, May 15). <em>Smart City Tech for Businesses</em>. GovTech. <a href="https://www.tech.gov.sg/products-and-services/for-businesses/smart-city-tech/" target="_blank" rel="noopener">https://www.tech.gov.sg/products-and-services/for-businesses/smart-city-tech/</a></li>
+              <li class="reference-entry">Hollands, R. G. (2008). Will the real smart city please stand up? Intelligent, progressive or entrepreneurial? <em>City, 12</em>(3), 303–320. <a href="https://doi.org/10.1080/13604810802479126" target="_blank" rel="noopener">https://doi.org/10.1080/13604810802479126</a></li>
+              <li class="reference-entry" id="ref-1">JTC Corporation. (n.d.). <em>JTC sustainability report FY2024</em> [Report covering 1 April 2024–31 March 2025]. <a href="https://www.jtc.gov.sg/-/media/project/jtc-cx/corpweb/assets/about-jtc/resources/documents/jtc-sustainability-report-fy2024.pdf" target="_blank" rel="noopener">https://www.jtc.gov.sg/-/media/project/jtc-cx/corpweb/assets/about-jtc/resources/documents/jtc-sustainability-report-fy2024.pdf</a></li>
+              <li class="reference-entry">Kitchin, R. (2014). The real-time city? Big data and smart urbanism. <em>GeoJournal, 79</em>, 1–14. <a href="https://doi.org/10.1007/s10708-013-9516-8" target="_blank" rel="noopener">https://doi.org/10.1007/s10708-013-9516-8</a></li>
+              <li class="reference-entry">Lange, S., &amp; Santarius, T. (2020). <em>Smart green world? Making digitalization work for sustainability.</em> Routledge.</li>
+              <li class="reference-entry">McPhearson, T., Cook, E. M., Berbés-Blázquez, M., Cheng, C., Grimm, N. B., Andersson, E., Barbosa, O., Chandler, D. G., Chang, H., Chester, M. V., Childers, D. L., Elser, S. R., Frantzeskaki, N., Grabowski, Z. R., Groffman, P., Hale, R. L., Iwaniec, D. M., Kabisch, N., Kennedy, C., . . . Troxler, T. G. (2022). A social-ecological-technological systems framework for urban ecosystem services. <em>One Earth, 5</em>(5), 505–518. <a href="https://doi.org/10.1016/j.oneear.2022.04.007" target="_blank" rel="noopener">https://doi.org/10.1016/j.oneear.2022.04.007</a></li>
+              <li class="reference-entry">Meadows, D. H. (2008). <em>Thinking in systems: A primer</em> (D. Wright, Ed.). Chelsea Green Publishing.</li>
+              <li class="reference-entry">Ramboll. (2026). <em>Punggol Digital District</em>. Ramboll. <a href="https://www.ramboll.com/en-apac/projects/transport/punggol-digital-district-singapore" target="_blank" rel="noopener">https://www.ramboll.com/en-apac/projects/transport/punggol-digital-district-singapore</a></li>
+              <li class="reference-entry">Schlosberg, D. (2007). <em>Defining environmental justice: Theories, movements, and nature.</em> Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780199286294.001.0001" target="_blank" rel="noopener">https://doi.org/10.1093/acprof:oso/9780199286294.001.0001</a></li>
+              <li class="reference-entry">Söderström, O., Paasche, T., &amp; Klauser, F. (2014). Smart cities as corporate storytelling. <em>City, 18</em>(3), 307–320. <a href="https://doi.org/10.1080/13604813.2014.906716" target="_blank" rel="noopener">https://doi.org/10.1080/13604813.2014.906716</a></li>
+              <li class="reference-entry">Trencher, G. (2019). Towards the smart city 2.0: Empirical evidence of using smartness as a tool for tackling social challenges. <em>Technological Forecasting and Social Change, 142</em>, 117–128. <a href="https://doi.org/10.1016/j.techfore.2018.07.033" target="_blank" rel="noopener">https://doi.org/10.1016/j.techfore.2018.07.033</a></li>
+              <li class="reference-entry">Trencher, G., &amp; Karvonen, A. (2019). Stretching “smart”: Advancing health and well-being through the smart city agenda. <em>Local Environment, 24</em>(7), 610–627. <a href="https://doi.org/10.1080/13549839.2017.1360264" target="_blank" rel="noopener">https://doi.org/10.1080/13549839.2017.1360264</a></li>
+              <li class="reference-entry">Urban Redevelopment Authority. (2026). <em>Vibrant workplaces, closer to home.</em> <a href="https://www.ura.gov.sg/land-planning/master-plan/master-plan-2025/regional-plans/north-east/vibrant-workplaces--closer-to-home/" target="_blank" rel="noopener">https://www.ura.gov.sg/land-planning/master-plan/master-plan-2025/regional-plans/north-east/vibrant-workplaces--closer-to-home/</a></li>
+            </ol>
+          </section>
+          <section aria-labelledby="image-credits-title">
+            <h3 id="image-credits-title">IMAGE CREDITS</h3>
+            <p>Images featured on this website are sourced from various online platforms as well as photographs taken personally by the website creator. All images are used for illustrative and informational purposes, with credit given to their respective sources where applicable.</p>
+          </section>
+          <section aria-labelledby="fieldwork-title">
+            <h3 id="fieldwork-title">FIELDWORK ACKNOWLEDGEMENT</h3>
+            <p>Photographs and firsthand observations: Group field visit to the Singapore Institute of Technology (SIT), Punggol Digital District, 2026.</p>
+            <p>The visit informed our assessment of smart operations, environmental infrastructure and active mobility. Observations were limited to SIT and do not establish district-wide sustainability performance.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
